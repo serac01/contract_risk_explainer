@@ -1,0 +1,18 @@
+<div class="upload-box" (click)="fileInput.click()">
+
+  <input 
+    #fileInput
+    type="file"
+    accept=".pdf"
+    hidden
+    (change)="onFileSelected($event)"
+  />
+
+  <p *ngIf="!file">Click to upload contract PDF</p>
+  <p *ngIf="file">{{file?.name}}</p>
+
+</div>
+
+<button (click)="upload()" [disabled]="!file">
+  Analyze Contract
+</button>

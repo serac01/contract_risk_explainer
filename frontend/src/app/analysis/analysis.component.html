@@ -1,0 +1,43 @@
+<div class="analysis" *ngIf="data">
+
+  <div class="clauses">
+
+    <div 
+      class="clause"
+      *ngFor="let clause of data.clauses"
+      (click)="selectClause(clause)"
+    >
+      <span class="risk" [class]="clause.risk">
+        {{clause.risk}}
+      </span>
+
+      {{ clause.clause }}
+    </div>
+
+  </div>
+
+  <div class="details" *ngIf="selectedClause">
+
+    <h3>Risk Explanation</h3>
+
+    <p>{{selectedClause.explanation}}</p>
+
+    <h4>Risk Score</h4>
+    <div class="score">
+      {{selectedClause.score}}
+    </div>
+
+    <h4>Important Words</h4>
+
+    <div class="tokens">
+      <span 
+        *ngFor="let token of selectedClause.tokens"
+        class="token"
+      >
+        {{token.word}} ({{token.weight}})
+      </span>
+    </div>
+
+  </div>
+
+</div>
