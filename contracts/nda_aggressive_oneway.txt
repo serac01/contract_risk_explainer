@@ -1,0 +1,33 @@
+ONE-WAY NON-DISCLOSURE AGREEMENT
+
+This One-Way Non-Disclosure Agreement is entered into between the Discloser and the Recipient.
+
+1. Confidential Information.
+"Confidential Information" means any and all information disclosed by Discloser to Recipient, whether oral, written, visual, electronic, or in any other form, whether or not marked as confidential, including without limitation all information that Recipient becomes aware of in any manner, even if independently known.
+
+2. Term.
+The obligations set forth herein shall remain in effect perpetually and shall survive any termination of the relationship between the Parties in perpetuity.
+
+3. Use and Protection.
+Recipient shall not use or disclose Confidential Information for any purpose other than as expressly authorised in writing by Discloser in Discloser's sole discretion. Recipient shall protect Confidential Information with the highest degree of care.
+
+4. Indemnification.
+Recipient shall indemnify, defend, and hold harmless Discloser and its affiliates, officers, directors, employees, agents, and representatives from and against any and all claims, losses, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related in any way to Recipient's use of the Confidential Information.
+
+5. Liability.
+Recipient agrees that its liability under this Agreement shall not be limited in any way, and Recipient expressly waives any cap or limitation on damages, including consequential, incidental, special, and punitive damages.
+
+6. Termination.
+Discloser may terminate this Agreement at any time and for any reason in its sole discretion. Recipient may not terminate this Agreement.
+
+7. Remedies.
+Recipient waives any right to seek injunctive or equitable relief against Discloser and agrees that Discloser shall be entitled to injunctive relief against Recipient without the need to post a bond.
+
+8. Assignment.
+Discloser may assign this Agreement to any third party at its sole discretion without notice to or consent from Recipient. Recipient may not assign this Agreement.
+
+9. Residuals.
+Notwithstanding anything to the contrary, Discloser may use any information retained in the unaided memory of its representatives for any purpose, including the development of products and services that compete with Recipient.
+
+10. Governing Law.
+This Agreement shall be governed by the laws of the Cayman Islands, and any dispute shall be resolved exclusively in the courts of the Cayman Islands.
