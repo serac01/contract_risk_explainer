@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --bg: #f6f3ec;
+  --bg2: #fbf9f4;
+  --surface: #ffffff;
+  --ink: #1f1c17;
+  --ink2: #3c3228;
+  --muted: #807870;
+  --hair: #e3ddd1;
+  --hair2: #cbc4b3;
+  --high: #a3471a;
+  --medium: #9a7a2c;
+  --low: #5a7150;
+  --high-wash: #f1dccb;
+  --med-wash: #efe3c4;
+  --low-wash: #dde3d2;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink2);
+  --color-muted: var(--muted);
+  --color-hair: var(--hair);
+  --color-hair2: var(--hair2);
+  --color-high: var(--high);
+  --color-medium: var(--medium);
+  --color-low: var(--low);
+  --color-high-wash: var(--high-wash);
+  --color-med-wash: var(--med-wash);
+  --color-low-wash: var(--low-wash);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-mono);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--hair);
+  color: var(--ink);
+  padding: 5px 10px;
+  font-size: 11.5px;
+  border-radius: 3px;
+}
+
+.btn-ghost:hover {
+  background: var(--hair);
+}
+
+.btn-solid {
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  padding: 5px 10px;
+  font-size: 11.5px;
+  border-radius: 3px;
+}
+
+.btn-solid:hover {
+  background: #000;
+}
+
+.chip {
+  font-family: var(--font-sans);
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--hair);
+  padding: 4px 8px;
+  font-size: 11.5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  background: var(--hair);
+}
+
+.chip-active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+mark {
+  background: #fde890;
+  outline: 1px solid #c79016;
+  color: var(--ink);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: var(--hair2);
+  border-radius: 4px;
+}
