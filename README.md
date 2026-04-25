@@ -17,13 +17,14 @@ The result is an interactive and transparent contract analysis tool that helps u
 ---
 
 ## Project Goals
-- Primary Goals
+**Primary Goals**
 - Build a working proof-of-concept for explainable contract risk analysis
 - Identify and highlight risky clauses in legal text
 - Provide transparent explanations for each risk detection
 - Show which words influenced the AI decision
 - Deliver an interactive and easy-to-understand UI
-- Secondary Goals
+  
+**Secondary Goals**
 - Assign risk scores to clauses (low / medium / high)
 - Provide overall contract risk summary
 - Allow users to click clauses for detailed explanations
