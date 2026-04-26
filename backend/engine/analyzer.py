@@ -47,9 +47,9 @@ def analyze_contract(text: Optional[str] = None):
 
     payload = _build_payload(clauses, explanations, errors)
 
-    # write to file
-    with open("payload.json", "w") as f:
-        json.dump(payload, f, indent=5)
+    # # write to file
+    # with open("payload.json", "w") as f:
+    #     json.dump(payload, f, indent=5)
 
     return payload
 
