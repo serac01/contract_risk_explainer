@@ -44,12 +44,54 @@ Contract Risk Explainer is an explainable AI system that highlights risky contra
 
 ---
 
-## Start the project
-cd backend
-uvicorn app.main:app --reload
+## Project Structure
 
-cd frontend
-npx ng serve
+```
+contract_risk_explainer/
+├── backend/        FastAPI service + analysis engine (clause splitter, classifier, llmSHAP explainer)
+│   ├── app/        HTTP layer — routes under /contracts (upload, analyze)
+│   └── engine/     Core analysis pipeline and llmSHAP attribution
+├── web/            Next.js 16 + React 19 + Tailwind UI (active frontend)
+├── frontend/       Legacy Angular UI (kept for reference)
+├── contracts/      Sample contracts used for local testing
+├── design/         Static design artifacts and prototypes
+└── Makefile        Dev tasks (install, dev, backend, web, stop, clean)
+```
+
+---
+
+## Getting Started
+
+### Requirements
+- Python 3.11+ with `fastapi`, `uvicorn`, `python-multipart`, `python-dotenv`, `pypdf`, `openai`
+- Node.js 20+ and `npm`
+
+### Install dependencies
+```bash
+make install
+```
+This installs backend Python packages and runs `npm install` in `web/`. Override the Python interpreter with `make install PYTHON=python3.12` if needed.
+
+### Run backend + web together
+```bash
+make dev
+```
+- Backend (FastAPI): http://localhost:8000
+- Web (Next.js):     http://localhost:3000
+
+### Run each side individually
+```bash
+make backend   # FastAPI on :8000
+make web       # Next.js on :3000
+make stop      # free both ports
+make clean     # remove .next, .turbo, __pycache__
+```
+
+### API endpoints
+- `POST /contracts/upload`  — extract text from a PDF and run the service-level analyzer
+- `POST /contracts/analyze` — extract text from a PDF and run the full engine pipeline
+
+Both accept a `multipart/form-data` request with a `file` field.
 
 ---
 
@@ -84,4 +126,4 @@ flowchart LR
     E --> G
     E --> H
     D --> I
-    ```
+```
