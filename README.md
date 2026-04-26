@@ -65,14 +65,27 @@ contract_risk_explainer/
 ### Requirements
 - Python 3.11+ with `fastapi`, `uvicorn`, `python-multipart`, `python-dotenv`, `pypdf`, `openai`
 - Node.js 20+ and `npm`
+- An OpenAI API key (https://platform.openai.com/api-keys)
 
-### Install dependencies
+### 1. Clone and install dependencies
 ```bash
+git clone <repo-url>
+cd contract_risk_explainer
 make install
 ```
 This installs backend Python packages and runs `npm install` in `web/`. Override the Python interpreter with `make install PYTHON=python3.12` if needed.
 
-### Run backend + web together
+### 2. Configure environment variables
+The backend reads an OpenAI key from `backend/engine/.env`. A template is provided as `backend/engine/.env.example`.
+
+```bash
+cp backend/engine/.env.example backend/engine/.env
+# then edit backend/engine/.env and set OPENAI_API_KEY=sk-...
+```
+
+The `.env` file is gitignored — never commit it. If you accidentally expose a key, rotate it immediately at https://platform.openai.com/api-keys.
+
+### 3. Run backend + web together
 ```bash
 make dev
 ```

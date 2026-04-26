@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -39,12 +40,14 @@ export function TopBar() {
   return (
     <header className="h-[52px] border-b border-hair bg-bg2 flex items-center px-6 gap-4 shrink-0">
       <div className="flex items-center gap-3">
-        <div className="w-[22px] h-[22px] rounded-[5px] bg-ink text-bg flex items-center justify-center font-mono text-[12px] font-semibold">
-          §
-        </div>
-        <div className="text-[15px] font-semibold tracking-tight">
-          Contract Risk Explainer
-        </div>
+        <Image
+          src="/logo.png"
+          alt="Veridict"
+          width={120}
+          height={50}
+          priority
+          className="h-8 w-auto"
+        />
         <div className="w-px h-5 bg-hair mx-2" />
       </div>
 
