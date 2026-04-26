@@ -101,7 +101,6 @@ make clean     # remove .next, .turbo, __pycache__
 ```
 
 ### API endpoints
-- `POST /contracts/upload`  — extract text from a PDF and run the service-level analyzer
 - `POST /contracts/analyze` — extract text from a PDF and run the full engine pipeline
 
 Both accept a `multipart/form-data` request with a `file` field.
